@@ -10,6 +10,8 @@ body{
     background-color: rgb(243, 243, 243);
     color: #2d2e35;
     line-height: 1.6;
+    max-width: 1600px;
+    margin: 0% auto;
 
 }
 
@@ -36,12 +38,27 @@ h1{
 
 }
 
-.navigation li{
+a, a:visited{
+
+    color: #2d2e35;
+    text-decoration: none;
+
+}
+
+a:hover{
+
+    color: #e7c735;
+
+
+}
+
+
+.nav-home, .nav-portfolio, .nav-contact{
 
     background-color: white;
     border-radius: 3px;
-    padding: 5% 5%;
-    margin: 5% auto;
+    padding: 1% 1%;
+    margin: 3% auto;
     width: 300px;
     max-width: 100%;
     font-weight: 700;
@@ -104,7 +121,7 @@ h1{
 
     text-align: center;
     margin: 0% auto;
-    padding: 20% 3% 5%;
+    padding: 5% 3% 5%;
 
 }
 
@@ -149,14 +166,163 @@ footer{
         height: auto;
 
     }
+       .nav-home, .nav-portfolio, .nav-contact{
 
-    li, ul{
+    background-color: rgba(153, 0, 0, 0);
+    font-size: 20px;
+    border-radius: 3px;
+    padding: 10px;
+    margin: 3% 1%;
+    width: 100px;
+    font-weight: 700;
+    text-align: center;
 
-        margin: 0% auto;
-        padding: 5% 5%
-        width 20%;
+}
+
+        .nav-container{
+
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: start;
+            width: 100vw;
+            margin: 5% 50%;
+
+
 
     }
 
+    .about-me-container{
+
+    display: flex;
+    flex-wrap: wrap;
+
+
+}
+
+    .about-me{
+
+    margin: 0% auto;
+    max-width: 100%;
+    width: 100vw;
+    height: auto;
+
+
+
+}
+
+
+
+.about-me p{
+
+    padding: 5% 0.5%;
+    margin: 1% 5% 5% 5%;
+    max-width: 100%;
+
+}
+.about-me img{
+
+    float: right;
+    margin: 1% 5% 10% 5%;
+
+}
+
     
+}
+
+@media screen and (min-width: 1024px){
+
+
+    .main-content-wrapper{
+
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 100%;
+        width: 1500px;
+        height: auto;
+       
+
+
+    }
+
+    .page{
+
+        max-width: 100%;
+        margin: 1%;
+        width: 30%;
+        margin: 0% auto;
+
+    }
+
+    h1{
+
+        display: inline-flex;
+        float: left;
+        margin-left: 5%;
+
+    }
+
+
+
+    .nav-home, .nav-portfolio, .nav-contact{
+
+    background-color: rgba(153, 0, 0, 0);
+    font-size: 20px;
+    border-radius: 3px;
+    padding: 10px;
+    margin: 3% 1%;
+    width: 100px;
+    font-weight: 700;
+    text-align: center;
+
+}
+
+        .nav-container{
+
+            display: flex;
+            flex-wrap: wrap;
+            justify-content:  flex-end;
+            width: 100vw;
+            margin: 5% 50%;
+
+
+
+    }
+
+    .about-me-container{
+
+    display: flex;
+    flex-wrap: wrap;
+
+
+}
+
+    .about-me{
+
+    margin: 0% auto;
+    max-width: 100%;
+    width: 100vw;
+    height: auto;
+
+
+
+}
+
+
+
+.about-me p{
+
+    padding: 5% 20%;
+    margin: 1% 5% 5% 5%;
+    max-width: 100%;
+
+}
+.about-me img{
+
+    float: right;
+    margin: 1% 5% 10% 5%;
+
+}
+
+
+
 }

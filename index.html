@@ -18,32 +18,39 @@
 
     <header>
         <h1>James Reich</h1>
-        <nav class="navigation">
-            <ul>
-                <li><a href=""></a>Home</li>
-                <li><a href=""></a>Portfolio</li>
-                <li><a href=""></a>Contact</li>
-            </ul>
-        </nav>
+        <div class="nav-container">
+            <nav class="navigation">
+                <div class="nav-home"><a href="#">Home</a></div>
+                <div class="nav-portfolio"><a href="#portfolio-link">Portfolio</a></div>
+                <div class="nav-contact"><a href="#contact-link">Contact</a></div>
+            </nav>
+        </div>
     </header>
 
 
 
     <main>
-        <section class="about-me">
-            <img src="images/responsive-layout-profile.png" alt="">
+        <div class="about-me-container">
+            <section class="about-me">
+                <div class="profile-photo"><img src="images/responsive-layout-profile.png" alt=""></div>
 
-            <p>Hi! I'm a front-end developer who loves responsive design and css. I recently finished a degree in front
-                end
-                web development
-                at Treehouse and am excited to put my skills to use!</p>
-        </section>
+                <div class="about-me-text">
+                    <p>Hi! I'm a front-end developer who loves responsive design and css. I recently finished a degree
+                        in
+                        front
+                        end
+                        web development
+                        at Treehouse and am excited to put my skills to use!</p>
+                </div>
+            </section>
+        </div>
 
         <div class="main">
-            <h2 class="portfol">PORTFOLIO</h2>
+            <h2 class="portfol" id="portfolio-link">PORTFOLIO</h2>
 
             <div class="main-content-container">
                 <div class="main-content-wrapper">
+
                     <section class="page">
                         <img src="images/portfolio-1.png" alt="">
                         <h2>Marketing Page</h2>
@@ -106,7 +113,7 @@
                 </div>
             </div>
         </div>
-        <section class="contact">
+        <section class="contact" id="contact-link">
 
             <h3>CONTACT</h3>
             <p>If you're interested in chatting or want more information about what I've been working on, I'd love
