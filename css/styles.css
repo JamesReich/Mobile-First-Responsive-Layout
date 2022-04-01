@@ -15,6 +15,8 @@ body{
 
 }
 
+/* This is for lists st */
+
 ol, ul{
 
     list-style: none;
@@ -132,6 +134,17 @@ footer{
 
 }
 
+/* *****************************************
+--------------Media Queries------------------
+********************************************/
+
+/* ---------------------------------------- */
+
+
+/* *****************************************
+--------------Tablet Mode------------------
+********************************************/
+
 @media screen and (min-width: 768px){
 
 
@@ -156,16 +169,22 @@ footer{
 
     }
 
-    .navigation{
+/* Flexbox container for the nav bar */
 
-        display: flex;
-        flex-wrap: wrap;
-        max-width: 100%;
-        width: 1024px;
-        margin: 0% auto;
-        height: auto;
+            .nav-container{
+
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            max-width: 100%;
+            width: 80vw;
+            margin:auto;
+
+
 
     }
+
+    /* Flexbox items for the navbar */
        .nav-home, .nav-portfolio, .nav-contact{
 
     background-color: rgba(153, 0, 0, 0);
@@ -175,21 +194,21 @@ footer{
     margin: 3% 1%;
     width: 100px;
     font-weight: 700;
-    text-align: center;
+
 
 }
 
-        .nav-container{
+/* flexbox item that also belongs to .nav-container */
+        .header-h1{
 
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: start;
-            width: 100vw;
-            margin: 5% 50%;
-
+     
+       margin: 5% 1% 5% 5%;
 
 
     }
+
+
+    
 
     .about-me-container{
 
@@ -228,6 +247,9 @@ footer{
 
     
 }
+/* *****************************************
+--------------Desktop Mode------------------
+********************************************/
 
 @media screen and (min-width: 1024px){
 
@@ -253,17 +275,18 @@ footer{
 
     }
 
-    h1{
+            .nav-container{
 
-        display: inline-flex;
-        float: left;
-        margin-left: 5%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            max-width: 100%;
+            width: 80vw;
+
+
 
     }
-
-
-
-    .nav-home, .nav-portfolio, .nav-contact{
+       .nav-home, .nav-portfolio, .nav-contact{
 
     background-color: rgba(153, 0, 0, 0);
     font-size: 20px;
@@ -272,18 +295,16 @@ footer{
     margin: 3% 1%;
     width: 100px;
     font-weight: 700;
-    text-align: center;
+
 
 }
 
-        .nav-container{
 
-            display: flex;
-            flex-wrap: wrap;
-            justify-content:  flex-end;
-            width: 100vw;
-            margin: 5% 50%;
+        .header-h1{
 
+     
+       margin-left: 2em;     
+       margin-right: auto;
 
 
     }
@@ -298,7 +319,7 @@ footer{
 
     .about-me{
 
-    margin: 0% auto;
+    margin: 0%;
     max-width: 100%;
     width: 100vw;
     height: auto;
