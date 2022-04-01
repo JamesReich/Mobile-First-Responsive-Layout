@@ -61,8 +61,14 @@ nav{
 
 }
 
+.nav-container{
 
-.nav-home, .nav-portfolio, .nav-contact{
+    background-color: #dbdbdb;
+
+}
+
+
+.nav-home, .nav-portfolio, .nav-contact, .nav-skills{
 
     background-color: white;
     border-radius: 3px;
@@ -93,7 +99,7 @@ nav{
 }
 
 
-.portfol{
+.portfol, .skills-class{
 
     text-align: center;
 
@@ -250,7 +256,7 @@ footer a{
     }
 
     /* Flexbox items for the navbar */
-       .nav-home, .nav-portfolio, .nav-contact{
+       .nav-home, .nav-portfolio, .nav-contact, .nav-skills{
 
     background-color: rgba(153, 0, 0, 0);
     font-size: 20px;
@@ -355,7 +361,7 @@ footer a{
 
 
     }
-       .nav-home, .nav-portfolio, .nav-contact{
+       .nav-home, .nav-portfolio, .nav-contact, .nav-skills{
 
     background-color: rgba(153, 0, 0, 0);
     font-size: 20px;
