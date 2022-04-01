@@ -48,30 +48,40 @@ h1{
     text-align: center;
 
 }
+.about-me{
 
-.about-me p{
+    margin: 0% auto;
+    max-width: 100%;
+    width: 400px;
+    height: auto;
 
-    text-align: center;
-    margin: 10% 5% 30% 5%;
+
 
 }
 
-.about-me img{
+.about-me p, .about-me img{
 
     text-align: center;
-    margin: 0% auto;
-    padding-top: 10%;
+    margin: 1% 5% 10% 5%;
+
+}
+
+
+.portfol{
+
+    text-align: center;
 
 }
 
 .main-content-wrapper{
 
-
+    
     background-color: white;
     padding: 10% 1%;
-    width: 700px;
+    width: 20em;
     max-width: 100%;
     text-align: center;
+    margin: 0% auto;
 
 }
 
@@ -100,12 +110,53 @@ h1{
 
 footer{
 
-    display: inline;
+    border-top: 3px solid #dbdbdb;
     text-align: center;
 
 }
 
 @media screen and (min-width: 768px){
-    
+
+
+    .main-content-wrapper{
+
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 100%;
+        width: 1024px;
+        margin: 0% auto;
+        height: auto;
+       
+
+
+    }
+
+    .page{
+
+        max-width: 100%;
+        margin: 1%;
+        width: 48%;
+
+    }
+
+    .navigation{
+
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 100%;
+        width: 1024px;
+        margin: 0% auto;
+        height: auto;
+
+    }
+
+    li, ul{
+
+        margin: 0% auto;
+        padding: 5% 5%
+        width 20%;
+
+    }
+
     
 }
