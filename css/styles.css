@@ -54,6 +54,13 @@ a:hover{
 
 }
 
+nav{
+
+    display: flex;
+    flex-direction: column;
+
+}
+
 
 .nav-home, .nav-portfolio, .nav-contact{
 
@@ -123,14 +130,40 @@ a:hover{
 
     text-align: center;
     margin: 0% auto;
-    padding: 5% 3% 5%;
+    padding: 5% 5%;
 
 }
 
-footer{
+.mobile-footer-container{
 
+    display: flex;
+    flex-wrap: wrap;
     border-top: 3px solid #dbdbdb;
-    text-align: center;
+    justify-content: start;
+    align-items: baseline;
+
+}
+
+.footer-nav-container{
+
+    display: none;
+}
+
+footer h4{
+
+    font-size: 25px;
+    margin-left: 5%;
+    flex-basis: 70%;
+
+}
+
+footer a{
+
+
+
+    flex-basis: 25%;
+    font-weight: 700;
+
 
 }
 
@@ -174,11 +207,43 @@ footer{
             .nav-container{
 
             display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
+            flex-direction: column;
             max-width: 100%;
             width: 80vw;
-            margin:auto;
+            margin: auto;
+
+
+
+    }
+
+    .mobile-footer-container{
+
+        display: none;
+    }
+
+     .footer-nav-container{
+
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-around;
+            align-content: center;
+            max-width: 100%;
+            width: 100vw;
+
+     }
+
+     footer nav{
+
+        align-items: baseline;
+
+     }
+
+    nav{
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
 
 
 
@@ -198,14 +263,6 @@ footer{
 
 }
 
-/* flexbox item that also belongs to .nav-container */
-        .header-h1{
-
-     
-       margin: 5% 1% 5% 5%;
-
-
-    }
 
 
     
@@ -245,8 +302,18 @@ footer{
 
 }
 
+.contact{
+
+
+    max-width: 50%;
+    margin: 0% auto;
+    padding-bottom: 5px;
+
+}
+
     
 }
+
 /* *****************************************
 --------------Desktop Mode------------------
 ********************************************/
@@ -279,7 +346,9 @@ footer{
 
             display: flex;
             flex-wrap: wrap;
+            flex-direction: row;
             justify-content: space-around;
+            align-content: center;
             max-width: 100%;
             width: 80vw;
 
@@ -299,15 +368,16 @@ footer{
 
 }
 
+    nav, .h1-header{
 
-        .header-h1{
+        display: flex;
+        justify-content: right;
 
-     
-       margin-left: 2em;     
-       margin-right: auto;
+
 
 
     }
+
 
     .about-me-container{
 
