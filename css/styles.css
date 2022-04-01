@@ -61,11 +61,6 @@ nav{
 
 }
 
-.nav-container{
-
-    background-color: #dbdbdb;
-
-}
 
 
 .nav-home, .nav-portfolio, .nav-contact, .nav-skills{
@@ -98,6 +93,11 @@ nav{
 
 }
 
+.about-me-text{
+
+    font-size: 25px;
+}
+
 
 .portfol, .skills-class{
 
@@ -114,6 +114,7 @@ nav{
     max-width: 100%;
     text-align: center;
     margin: 0% auto;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 
 }
 
@@ -202,6 +203,22 @@ footer a{
 
     .page{
 
+        transition: all 1s ease-out;
+
+    }
+      
+
+    .page:hover{
+
+        transform: scale(1.5);
+        transition: ease-in 1s;
+        background-color: #f1f1f1;
+
+
+    }
+
+    .page{
+
         max-width: 100%;
         margin: 1%;
         width: 48%;
@@ -236,6 +253,7 @@ footer a{
             align-content: center;
             max-width: 100%;
             width: 100vw;
+            border-top: 3px solid #dbdbdb;
 
      }
 
