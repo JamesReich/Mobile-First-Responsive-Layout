@@ -203,22 +203,6 @@ footer a{
 
     .page{
 
-        transition: all 1s ease-out;
-
-    }
-      
-
-    .page:hover{
-
-        transform: scale(1.5);
-        transition: ease-in 1s;
-        background-color: #f1f1f1;
-
-
-    }
-
-    .page{
-
         max-width: 100%;
         margin: 1%;
         width: 48%;
@@ -437,6 +421,22 @@ footer a{
     margin: 1% 5% 10% 5%;
 
 }
+
+    .page{
+
+        transition: all 1s ease-out;
+
+    }
+      
+
+    .page:hover{
+
+        transform: scale(1.5);
+        transition: ease-in 1s;
+        background-color: #f1f1f1;
+
+
+    }
 
 
 
