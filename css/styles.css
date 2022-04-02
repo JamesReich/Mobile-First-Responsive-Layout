@@ -77,8 +77,10 @@ nav{
 }
 .about-me{
 
+
+    display: flex;
+    flex-direction: column;
     margin: 0% auto;
-    max-width: 100%;
     width: 400px;
     height: auto;
 
@@ -86,10 +88,10 @@ nav{
 
 }
 
-.about-me p, .about-me img{
+.about-me-text, .profile-photo{
 
     text-align: center;
-    margin: 1% 5% 10% 5%;
+    width: 100%;
 
 }
 
@@ -211,7 +213,7 @@ footer a{
 
 /* Flexbox container for the nav bar */
 
-            .nav-container{
+    .nav-container{
 
             display: flex;
             flex-direction: column;
@@ -273,18 +275,15 @@ footer a{
 
 
 
-    
 
-    .about-me-container{
+
+.about-me{
 
     display: flex;
-    flex-wrap: wrap;
-
-
-}
-
-    .about-me{
-
+    flex-direction: row;
+    justify-content: flex-end;
+    align-content: center;
+    align-items: center;
     margin: 0% auto;
     max-width: 100%;
     width: 100vw;
@@ -296,19 +295,17 @@ footer a{
 
 
 
-.about-me p{
+.about-me-text{
 
-    padding: 5% 0.5%;
-    margin: 1% 5% 5% 5%;
+    order: -1;
+    width: 100%;
+    font-size: 1.3em;
+    margin: 0 5%;
     max-width: 100%;
 
 }
-.about-me img{
 
-    float: right;
-    margin: 1% 5% 10% 5%;
 
-}
 
 .contact{
 
@@ -387,38 +384,11 @@ footer a{
     }
 
 
-    .about-me-container{
 
-    display: flex;
-    flex-wrap: wrap;
+.about-me-text{
 
 
-}
-
-    .about-me{
-
-    margin: 0%;
-    max-width: 100%;
-    width: 100vw;
-    height: auto;
-
-
-
-}
-
-
-
-.about-me p{
-
-    padding: 5% 20%;
-    margin: 1% 5% 5% 5%;
-    max-width: 100%;
-
-}
-.about-me img{
-
-    float: right;
-    margin: 1% 5% 10% 5%;
+max-width: 50%;
 
 }
 
